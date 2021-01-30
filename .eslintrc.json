@@ -43,14 +43,19 @@
     "space-before-function-paren": "off",
     "react/prop-types": "off", "code": 0,
     "@typescript-eslint/interface-name-prefix": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ],
     "class-methods-use-this": "off",
     "no-prototype-builtins": "off",
     "no-restricted-syntax": "off",
     "max-classes-per-file": "off",
     "no-console": "off",
     "@typescript-eslint/no-unused-vars": [
-      "error",
+      "warn",
       {
         "argsIgnorePattern": "_"
       }
